@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const ServicesD = () => {
-  const [activeTab, setActiveTab] = useState(1);
-
+  const { id } = useParams();
+  
+  const [activeTab, setActiveTab] = useState(parseInt(id));
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
   };
@@ -65,8 +66,8 @@ const ServicesD = () => {
           onClick={() => handleTabClick(1)}
           className={` ${
             activeTab !== 1
-              ? "py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold"
-              : " py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold text-sky-500 bg-transparent"
+              ? "py-4 px-6  font-semibold"
+              : " py-4 px-6 w-1/5  font-semibold text-sky-500 border-t-4 border-sky-500 bg-transparent"
           }`}
         >
           Reverse Engineering
@@ -75,8 +76,8 @@ const ServicesD = () => {
           onClick={() => handleTabClick(2)}
           className={` ${
             activeTab !== 2
-              ? "py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold"
-              : " py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold text-[#9B59B6] bg-transparent"
+              ? "py-4 px-6  font-semibold"
+              : " py-4 px-6 font-semibold text-sky-500 border-t-4 border-[#9B59B6] font-semibold text-[#9B59B6] bg-transparent"
           }`}
         >
           Source Code Recovery
@@ -85,8 +86,8 @@ const ServicesD = () => {
           onClick={() => handleTabClick(3)}
           className={` ${
             activeTab !== 3
-              ? "py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold"
-              : " py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold text-[#41BB19] bg-transparent"
+              ? "py-4 px-6  font-semibold"
+              : " py-4 px-6  border-t-4 border-[#41BB19] font-semibold text-[#41BB19] bg-transparent"
           }`}
         >
           Software Localization
@@ -95,8 +96,8 @@ const ServicesD = () => {
           onClick={() => handleTabClick(4)}
           className={` ${
             activeTab !== 4
-              ? "py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold"
-              : " py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold text-[#FE781E] bg-transparent"
+              ? "py-4 px-6  font-semibold"
+              : " py-4 px-6 border-t-4 border-[#FE781E] font-semibold text-[#FE781E] bg-transparent"
           }`}
         >
           Software Protection Design

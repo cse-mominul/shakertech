@@ -23,12 +23,13 @@ const Routes = createBrowserRouter(
       ],
     },
     {
-        path: "/dashbord",
+        path: "/services",
         element: <ServicesD></ServicesD>,
         children: [
             {
-                path: "/dashbord/reverse",
-                element: <Reverse></Reverse>
+                path: "/services/reverse/:id",
+                element: <Reverse></Reverse>,
+                
             }
         ]
     }
