@@ -69,13 +69,13 @@ const ServicesD = () => {
       </section>
 
       {/* Tabview Buttons */}
-      <div class="flex lg:ml-40 lg:mr-40 border-green-500">
+      <div class="flex lg:ml-40 flex-col lg:flex-row lg:mr-40 border-green-500">
         <button
           onClick={() => handleTabClick(1)}
           className={` ${
             activeTab !== 1
               ? "py-4 px-6  font-semibold"
-              : " py-4 px-6 w-1/5  font-semibold text-sky-500 border-t-4 border-sky-500 bg-transparent"
+              : " py-4 px-6 font-semibold text-sky-500 border-t-4 border-sky-500 bg-transparent"
           }`}
         >
           Reverse Engineering
@@ -85,7 +85,7 @@ const ServicesD = () => {
           className={` ${
             activeTab !== 2
               ? "py-4 px-6  font-semibold"
-              : " py-4 px-6 font-semibold text-sky-500 border-t-4 border-[#9B59B6] font-semibold text-[#9B59B6] bg-transparent"
+              : " py-4 px-6 font-semibold text-sky-500 border-t-4 border-[#9B59B6] bg-transparent"
           }`}
         >
           Source Code Recovery
