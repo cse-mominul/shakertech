@@ -62,13 +62,13 @@ const ServicesD = () => {
       <div class="flex lg:ml-40 lg:mr-40">
         <button
           onClick={() => handleTabClick(1)}
-          class="w-1/5 border hover:text-sky-500 hover:bg-transparent py-4 px-6 bg-gray-100 border-b-2 border-gray-200 font-semibold"
+          className={` ${activeTab !== 1 ? "py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold" : " py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold text-sky-500 bg-transparent"}`}
         >
           Reverse Engineering
         </button>
         <button
           onClick={() => handleTabClick(2)}
-          class="w-1/5 py-4 px-6 bg-gray-100 border-b-2 border-gray-200 font-semibold"
+          className={` ${activeTab !== 2 ? "py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold" : " py-4 px-6 bg-gray-100 border-b-2 border-gray-200 w-1/5 border font-semibold text-[#9B59B6] bg-transparent"}`}
         >
           Source Code Recovery
         </button>

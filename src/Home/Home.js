@@ -32,7 +32,7 @@ const Home = () => {
                 </p>
               </div>
             </Link>
-            <div class="w-full md:w-1/2 px-4 py-2 ">
+            <Link to="/dashbord/Source" class="w-full md:w-1/2 px-4 py-2 ">
               <div class="bg-[#8C4AA8] p-4 text-center">
                 <h2 class="text-xl mt-12 font-bold mb-4">
                   Source Code Recovery
@@ -42,8 +42,8 @@ const Home = () => {
                   algorithms from compiled applications
                 </p>
               </div>
-            </div>
-            <div class="w-full md:w-1/2 px-4 py-2 ">
+            </Link>
+            <Link to="" class="w-full md:w-1/2 px-4 py-2 ">
               <div class="bg-[#36AE71] p-4 text-center">
                 <h2 class="text-xl mt-12 font-bold mb-4">
                   {" "}
@@ -54,8 +54,8 @@ const Home = () => {
                   code
                 </p>
               </div>
-            </div>
-            <div class="w-full md:w-1/2 px-4 py-2 ">
+            </Link>
+            <Link to="" class="w-full md:w-1/2 px-4 py-2 ">
               <div class="bg-[#F79A29] p-4 text-center">
                 <h2 class="text-xl mt-12 font-bold mb-4">
                   {" "}
@@ -66,7 +66,7 @@ const Home = () => {
                   protection & anti-cracking techniques
                 </p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
