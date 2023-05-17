@@ -74,7 +74,7 @@ const ServicesD = () => {
           onClick={() => handleTabClick(1)}
           className={` ${
             activeTab !== 1
-              ? "py-4 px-6  font-semibold hover:border-t-4 hover:border-sky-500"
+              ? "py-4 px-6 border border-white border-2 font-semibold hover:border-t-4 hover:border-b-0 hover:border-l-0 hover:border-r-0  bg-gray-600 hover:text-sky-500 text-white hover:bg-transparent  hover:bg-transparent hover:border-sky-500"
               : " py-4 px-6 font-semibold text-sky-500 border-t-4 border-sky-500 bg-transparent"
           }`}
         >
@@ -84,8 +84,8 @@ const ServicesD = () => {
           onClick={() => handleTabClick(2)}
           className={` ${
             activeTab !== 2
-              ? "py-4 px-6  font-semibold hover:border-t-4 hover:border-[#9B59B6]"
-              : " py-4 px-6 font-semibold text-sky-500 border-t-4 border-[#9B59B6] bg-transparent"
+              ? "py-4 px-6  font-semibold border border-white border-2 hover:border-b-0 hover:border-l-0 hover:border-r-0 bg-gray-600 hover:text-[#9B59B6] text-white hover:bg-transparent hover:border-t-4 hover:border-[#9B59B6]"
+              : " py-4 px-6 font-semibold text-[#9B59B6] border-t-4 border-[#9B59B6] bg-transparent"
           }`}
         >
           Source Code Recovery
@@ -94,7 +94,7 @@ const ServicesD = () => {
           onClick={() => handleTabClick(3)}
           className={` ${
             activeTab !== 3
-              ? "py-4 px-6  font-semibold hover:border-t-4 hover:border-[#41BB19]"
+              ? "py-4 px-6  border border-white border-2 hover:text-[#41BB19] font-semibold hover:border-t-4 hover:bg-transparent text-white bg-gray-600 hover:border-b-0 hover:border-l-0 hover:border-r-0 hover:border-[#41BB19]"
               : " py-4 px-6  border-t-4 border-[#41BB19] font-semibold text-[#41BB19] bg-transparent"
           }`}
         >
@@ -104,13 +104,13 @@ const ServicesD = () => {
           onClick={() => handleTabClick(4)}
           className={` ${
             activeTab !== 4
-              ? "py-4 px-6  font-semibold hover:border-t-4 hover:border-[#FE781E]"
+              ? "py-4 px-6 border border-white border-2 hover:text-[#FE781E] font-semibold hover:border-t-4 hover:bg-transparent text-white bg-gray-600 hover:border-b-0 hover:border-l-0 hover:border-r-0 hover:border-[#41BB19] hover:border-[#FE781E]"
               : " py-4 px-6 border-t-4 border-[#FE781E] font-semibold text-[#FE781E] bg-transparent"
           }`}
         >
           Software Protection Design
         </button>
-        <button className="w-1/5 py-4 px-6 hover:border-t-4 hover:border-sky-500 font-semibold">
+        <button className="w-1/5 hover:bg-transparent hover:text-sky-500 text-white bg-gray-600 hover:border-b-0 hover:border-l-0  hover:bg-transparent text-white bg-gray-600 hover:border-b-0 hover:border-l-0 hover:border-r-0 hover:border-[#41BB19] hover:border-[#FE781E] hover:border-r-0 hover:border-[#41BB19] py-4 px-6 hover:border-t-4 hover:border-sky-500 font-semibold">
           <Link to="/testmonials">Testimonials</Link>
         </button>
       </div>
