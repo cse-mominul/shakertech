@@ -74,7 +74,7 @@ const ServicesD = () => {
           onClick={() => handleTabClick(1)}
           className={` ${
             activeTab !== 1
-              ? "py-4 px-6  font-semibold"
+              ? "py-4 px-6  font-semibold hover:border-t-4 hover:border-sky-500"
               : " py-4 px-6 font-semibold text-sky-500 border-t-4 border-sky-500 bg-transparent"
           }`}
         >
@@ -84,7 +84,7 @@ const ServicesD = () => {
           onClick={() => handleTabClick(2)}
           className={` ${
             activeTab !== 2
-              ? "py-4 px-6  font-semibold"
+              ? "py-4 px-6  font-semibold hover:border-t-4 hover:border-[#9B59B6]"
               : " py-4 px-6 font-semibold text-sky-500 border-t-4 border-[#9B59B6] bg-transparent"
           }`}
         >
@@ -94,7 +94,7 @@ const ServicesD = () => {
           onClick={() => handleTabClick(3)}
           className={` ${
             activeTab !== 3
-              ? "py-4 px-6  font-semibold"
+              ? "py-4 px-6  font-semibold hover:border-t-4 hover:border-[#41BB19]"
               : " py-4 px-6  border-t-4 border-[#41BB19] font-semibold text-[#41BB19] bg-transparent"
           }`}
         >
@@ -104,7 +104,7 @@ const ServicesD = () => {
           onClick={() => handleTabClick(4)}
           className={` ${
             activeTab !== 4
-              ? "py-4 px-6  font-semibold"
+              ? "py-4 px-6  font-semibold hover:border-t-4 hover:border-[#FE781E]"
               : " py-4 px-6 border-t-4 border-[#FE781E] font-semibold text-[#FE781E] bg-transparent"
           }`}
         >
@@ -112,7 +112,7 @@ const ServicesD = () => {
         </button>
         <Link
           to="/testmonials"
-          class="w-1/5 py-4 px-6 bg-gray-100 border-b-2 border-gray-200 font-semibold"
+          class="w-1/5 py-4 px-6 hover:border-t-4 hover:border-sky-500 font-semibold"
         >
           Testimonials
         </Link>
