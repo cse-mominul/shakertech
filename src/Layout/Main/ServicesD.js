@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import Navbar from "../../Navbar/Navbar";
 
 const ServicesD = () => {
   const { id } = useParams();
@@ -10,6 +11,9 @@ const ServicesD = () => {
   };
   return (
     <div>
+        {/* Navbar */}
+        <Navbar></Navbar>
+      {/* Reverse Engineering Hero Sction */}
       <section id="div1" className={`mb-4 ${activeTab !== 1 ? "hidden" : ""}`}>
         <div class="text-center py-24 px-6">
           <h1 class="text-5xl text-sky-500 md:text-3xl xl:text-5xl font-bold tracking-tight mb-12">
@@ -23,6 +27,7 @@ const ServicesD = () => {
         </div>
       </section>
 
+      {/* Source Code Recovery Hero Sction */}
       <section id="div2" className={`mb-4 ${activeTab !== 2 ? "hidden" : ""}`}>
         <div class="text-center py-24 px-6">
           <h1 class="text-5xl text-[#9B59B6] md:text-3xl xl:text-5xl font-bold tracking-tight mb-12">
@@ -36,6 +41,7 @@ const ServicesD = () => {
         </div>
       </section>
 
+      {/* Software & Games Localization Hero Sction */}
       <section id="div3" className={`mb-4 ${activeTab !== 3 ? "hidden" : ""}`}>
         <div class="text-center py-24 px-6">
           <h1 class="text-5xl text-[#41BB19] md:text-3xl xl:text-5xl font-bold tracking-tight mb-12">
@@ -48,6 +54,7 @@ const ServicesD = () => {
         </div>
       </section>
 
+      {/*  Software Protection Design Hero Sction */}
       <section id="div4" className={`mb-4 ${activeTab !== 4 ? "hidden" : ""}`}>
         <div class="text-center py-24 px-6">
           <h1 class="text-5xl text-[#FE781E] md:text-3xl xl:text-5xl font-bold tracking-tight mb-12">
@@ -61,6 +68,7 @@ const ServicesD = () => {
         </div>
       </section>
 
+      {/* Tabview Buttons */}
       <div class="flex lg:ml-40 lg:mr-40 border-green-500">
         <button
           onClick={() => handleTabClick(1)}
@@ -109,9 +117,11 @@ const ServicesD = () => {
           Testimonials
         </Link>
       </div>
+
       <div class="container mx-auto mt-4 lg:ml-40">
         <div class="bg-white">
           <div class="p-8">
+            {/* Tabview 1  */}
             <div
               id="div1"
               className={`mb-4 ${activeTab !== 1 ? "hidden" : " text-left"}`}
@@ -143,6 +153,8 @@ const ServicesD = () => {
                 Examples of services offered
               </h1>
             </div>
+
+            {/* Tabview 2  */}
             <div
               id="div2"
               className={`mb-4 ${activeTab !== 2 ? "hidden" : ""}`}
@@ -155,6 +167,8 @@ const ServicesD = () => {
                 from the compiled binary <br /> applications written in:
               </p>
             </div>
+
+            {/* Tabview 3  */}
             <div
               id="div3"
               className={`mb-4 ${activeTab !== 3 ? "hidden" : "text-left"}`}
@@ -168,6 +182,7 @@ const ServicesD = () => {
                 documentation, just using reverse engineering skills.
               </p>
             </div>
+            {/* Tabview 4 */}
             <div
               id="div4"
               className={`mb-4 ${activeTab !== 4 ? "hidden" : "text-left"}`}
